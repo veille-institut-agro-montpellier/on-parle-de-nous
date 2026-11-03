@@ -72,7 +72,6 @@ function veille_render_card($it, $featured)
     $img = $it['image'] !== ''
         ? '<img src="' . veille_e($it['image']) . '" alt="" loading="' . ($featured ? 'eager' : 'lazy') . '" decoding="async" referrerpolicy="no-referrer">'
         : '';
-    $initial = function_exists('mb_substr') ? mb_substr($source, 0, 1, 'UTF-8') : substr($source, 0, 1);
 
     $h = 0;
     $len = strlen($source);
@@ -81,7 +80,7 @@ function veille_render_card($it, $featured)
     }
     return '<article class="card ph-' . ($h % 6) . ($featured ? ' card--featured' : '') . ($img === '' ? ' card--noimg' : '') . '">'
          . '<a class="card__media" href="' . veille_e($it['link']) . '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">'
-         . $img . '<span class="card__ph"><span>' . veille_e(strtoupper($initial)) . '</span></span></a>'
+         . $img . '<span class="card__ph"></span></a>'
          . '<div class="card__body">'
          . '<p class="card__meta"><span class="card__source">' . veille_e($source) . '</span>'
          . ($it['date'] ? '<time datetime="' . veille_e($it['date']) . '">' . veille_e(veille_date_fr($it['date'])) . '</time>' : '')

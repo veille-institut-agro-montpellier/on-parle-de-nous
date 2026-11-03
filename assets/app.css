@@ -165,7 +165,6 @@ a { color: inherit; }
 .card__ph { position: absolute; inset: 0; display: grid; place-items: center; overflow: hidden; }
 .card__ph::before { content: ""; position: absolute; width: 70%; aspect-ratio: 1; right: -18%; bottom: -34%; background: rgba(40,41,41,.14);
   -webkit-mask: url("img/forme-anneau.svg") center / contain no-repeat; mask: url("img/forme-anneau.svg") center / contain no-repeat; transform: rotate(-20deg); }
-.card__ph span { position: relative; font-size: 56px; font-weight: 700; line-height: 1; color: var(--noir); }
 .card__body { display: flex; flex-direction: column; gap: 10px; padding: 18px 20px 22px; flex: 1; }
 .card__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 0; font-size: 13px; color: var(--texte-2); }
 .card__source { font-weight: 700; color: var(--texte); background: var(--fond-2); border-radius: var(--pill); padding: 3px 10px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -187,7 +186,7 @@ a { color: inherit; }
 .card--featured .card__body { justify-content: center; padding: 32px 36px; gap: 14px; }
 .card--featured .card__title { font-size: clamp(22px, 2.4vw, 30px); line-height: 1.18; }
 .card--featured .card__excerpt { font-size: 16px; -webkit-line-clamp: 6; }
-.card--featured .card__ph span { font-size: 96px; }
+
 @media (max-width: 760px) {
   .card--featured { display: flex; }
   .card--featured .card__media { aspect-ratio: 16 / 9; min-height: 0; }

@@ -46,7 +46,7 @@ Si PHP ne répond pas en JSON (PHP désactivé, erreur 500), le navigateur bascu
 
 Prises dans le flux : `media:content`, `media:thumbnail`, `enclosure`, puis première image de l'article.
 Les pictos, logos, boutons de partage et pixels de suivi sont écartés ; les images `http://` passent en `https://`.
-Une photo absente ou cassée est remplacée par un visuel aux couleurs de la charte (initiale du média sur une forme du logo).
+Une photo absente ou cassée est remplacée par un visuel aux couleurs de la charte (aplat de couleur avec une forme du logo).
 
 ## Lecture des flux par GitHub (source principale)
 

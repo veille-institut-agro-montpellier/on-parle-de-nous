@@ -234,7 +234,7 @@
     var cat = opts.cat ? byKey[opts.cat] : null;
     return '<article class="card ph-' + phIndex(source) + (featured ? ' card--featured' : '') + (img ? '' : ' card--noimg') + (cat ? ' c-' + cat.color : '') + '">' +
       '<a class="card__media" href="' + esc(it.link) + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' +
-        img + '<span class="card__ph"><span>' + esc((source.charAt(0) || '•').toUpperCase()) + '</span></span></a>' +
+        img + '<span class="card__ph"></span></a>' +
       '<div class="card__body">' +
         '<p class="card__meta">' +
           (cat ? '<span class="card__cat">' + esc(cat.label) + '</span>' : '') +
